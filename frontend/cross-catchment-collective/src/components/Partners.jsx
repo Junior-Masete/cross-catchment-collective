@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import uuwasp from "../assets/partner-logos/uwasp.png";
 import abi from "../assets/partner-logos/ueip.png";
 import umkhomazi from "../assets/partner-logos/ndc.png";
@@ -19,16 +20,18 @@ const partners = [
 ];
 
 function Partners() {
+  const navigate = useNavigate();
+  
   return (
     <section className="bg-white py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-center text-[#1E1E1E] mb-14">
+        <p className="text-4xl font-bold text-center text-[#2E613F] mb-14">
           Our Partners
-        </h2>
+        </p>
 
         {/* Fade Effect */}
-        <div className="relative">
+        <div className="relative mt-8">
 
           <div className="absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-white to-transparent" />
 
@@ -54,8 +57,8 @@ function Partners() {
 
         </div>
 
-        <div className="flex justify-center mt-12">
-          <button className="px-8 py-3 rounded-md bg-[#215D38] text-white hover:bg-[#18492c] transition">
+        <div className="flex justify-center mt-8">
+          <button onClick={() => navigate("/about-us")} className="px-8 py-3 rounded-md bg-[#215D38] text-white hover:bg-[#18492c] transition">
             Explore
           </button>
         </div>

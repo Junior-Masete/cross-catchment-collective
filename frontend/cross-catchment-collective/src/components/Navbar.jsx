@@ -1,17 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import "tailwindcss";
 import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/ccc_logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#" },
-    { name: "Resource Hub", href: "#" },
-    { name: "News", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about-us" },
+    { name: "Resource Hub", path: "/resource-hub" },
+    { name: "News", path: "/news" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -29,22 +30,40 @@ function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
-            {navLinks.map((link, index) => (
-              <a
+            {navLinks.map((link) => (
+              <NavLink
                 key={link.name}
-                href={link.href}
-                className={`relative text-lg font-medium transition-colors duration-200 ${
-                  index === 0
+                to={link.path}
+                className={({ isActive }) =>
+                `relative text-lg font-medium transition-colors duration-200 ${
+                  isActive
                     ? "text-[#2D6A4F]"
                     : "text-gray-800 hover:text-[#2D6A4F]"
-                }`}
+                }`
+              }
+              
+                // className={`relative text-lg font-medium transition-colors duration-200 ${
+                //   index === 0
+                //     ? "text-[#2D6A4F]"
+                //     : "text-gray-800 hover:text-[#2D6A4F]"
+                // }`}
               >
-                {link.name}
+
+              {({isActive}) => (
+                <>
+                  {link.name}
+
+                  {isActive && (
+                    <span className="absolute left-0 -bottom-2 h-[3px] w-full rounded-full bg-[#2D6A4F]" />
+                  )}
+                </>
+              )}
+                {/* {link.name}
 
                 {index === 0 && (
                   <span className="absolute left-0 -bottom-2 h-[3px] w-full rounded-full bg-[#2D6A4F]" />
-                )}
-              </a>
+                )} */}
+              </NavLink>
             ))}
           </div>
 

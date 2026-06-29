@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
-import Partners from './components/Partners.jsx'
-import HowItWorks from './components/HowItWorks.jsx'
-import SixCSection from './components/SixCs.jsx'
+import Homepage from './pages/Homepage.jsx'
 import Footer from './components/Footer.jsx'
+import AboutPage from './pages/Aboutpage.jsx'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+  useSearchParams,
+} from "react-router-dom";
 
 import './App.css'
 
@@ -14,12 +19,18 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Partners />
-      <HowItWorks />
-      <SixCSection />
-      <Footer />
+      <BrowserRouter basename="/cross-catchment-collective">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about-us" element={<AboutPage />} />
+        </Routes>
+        <Footer /> 
+      </BrowserRouter>
+      {/* <Navbar />
+      <Homepage />
+      <AboutPage />
+      <Footer /> */}
     </>
   )
 }

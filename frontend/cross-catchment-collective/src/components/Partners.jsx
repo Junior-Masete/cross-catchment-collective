@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import uuwasp from "../assets/partner-logos/uwasp.png";
-import abi from "../assets/partner-logos/ueip.png";
+import abi from "../assets/partner-logos/abi.avif";
 import umkhomazi from "../assets/partner-logos/ndc.png";
 import rivers from "../assets/partner-logos/rol.png";
 import ueip from "../assets/partner-logos/ucp.png";

@@ -71,11 +71,11 @@ function SixCSection() {
 
                 {/* Text */}
                 <div>
-                  <h3 className="text-xl font-bold uppercase tracking-wide text-[#2E613F]">
+                  <h3 className="text-xl text-left font-bold uppercase tracking-wide text-[#2E613F]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-2 text-gray-600 leading-relaxed">
+                  <p className="mt-2 text-left text-gray-600 leading-relaxed">
                     {item.subtitle}
                   </p>
                 </div>

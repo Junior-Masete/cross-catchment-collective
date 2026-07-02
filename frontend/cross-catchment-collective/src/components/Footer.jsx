@@ -33,7 +33,7 @@ function Footer() {
             </div>
 
             {/* Navigation */}
-            <div>
+            <div className="text-left">
               <h4 className="mb-4 text-2xl font-semibold text-green-800">
                 Menu
               </h4>
@@ -50,7 +50,7 @@ function Footer() {
 
                 <li>
                   <a
-                    href="/about"
+                    href="/cross-catchment-collective/about-us"
                     className="transition hover:text-green-700"
                   >
                     About Us
@@ -87,7 +87,7 @@ function Footer() {
             </div>
 
             {/* Contact */}
-            <div>
+            <div className="text-left">
               <h4 className="mb-4 text-2xl font-semibold text-green-800">
                 Get in touch
               </h4>

@@ -1,11 +1,18 @@
 import { useState, useEffect } from 'react'
 import "tailwindcss";
 import { Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/ccc_logo.png";
 
 function Navbar() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]
+  );
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -16,11 +23,11 @@ function Navbar() {
   ];
 
   return (
-    <nav className="w-full bg-white shadow-sm border-b border-gray-100">
+    <nav className="relative w-full bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center">
+          <div onClick={() => navigate("/")} className="flex items-center">
             <img
               src={logo}
               alt="Cross-Catchment Collective"
@@ -41,12 +48,6 @@ function Navbar() {
                     : "text-gray-800 hover:text-[#2D6A4F]"
                 }`
               }
-              
-                // className={`relative text-lg font-medium transition-colors duration-200 ${
-                //   index === 0
-                //     ? "text-[#2D6A4F]"
-                //     : "text-gray-800 hover:text-[#2D6A4F]"
-                // }`}
               >
 
               {({isActive}) => (
@@ -83,23 +84,24 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
+        className={`absolute left-0 top-full z-50 w-full md:hidden overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
         <div className="px-6 py-4 bg-white border-t border-gray-100">
           {navLinks.map((link, index) => (
-            <a
+            <NavLink
               key={link.name}
-              href={link.href}
-              className={`block py-3 text-base font-medium ${
-                index === 0
+              to={link.path}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive}) => `block py-3 text-base font-medium ${
+                isActive
                   ? "text-[#2D6A4F]"
                   : "text-gray-700 hover:text-[#2D6A4F]"
               }`}
             >
               {link.name}
-            </a>
+            </NavLink>
           ))}
         </div>
       </div>

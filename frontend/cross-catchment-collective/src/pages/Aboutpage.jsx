@@ -1,5 +1,7 @@
 import PartnershipsSection from "../components/PartnshipsSection";
+import ValuesSection from "../components/ValueSection";
 import storyMap from "../assets/Catchments_Maps.png";
+import team from "../assets/theteam.jpg"
 
 function AboutPage() {
     return (
@@ -71,7 +73,50 @@ function AboutPage() {
 
     </section>
     <PartnershipsSection />
+    <ValuesSection />
+    <section className="bg-white">
+      <div className="max-w-7xl mx-auto px-6">
 
+        {/* Heading */}
+        <div className="text-center mb-12">
+
+          <p className="text-[#2D6A4F] font-semibold uppercase tracking-wider">
+            Meet Our Team
+          </p>
+
+          <p className="mt-3 text-4xl md:text-5xl font-bold text-[#2D6A4F]">
+            The People Behind the Collective
+          </p>
+
+          <p className="mt-4 max-w-2x1 text-gray-600">
+            Our team brings together diverse expertise, shared purpose, and a
+            commitment to strengthening South Africa's catchments.
+          </p>
+
+    
+        </div>
+
+        {/* Team Image */}
+        <div className="flex justify-center">
+
+          <div className="relative overflow-hidden rounded-3xl shadow-xl max-w-5xl w-full group">
+
+            <img
+              src={team}
+              alt="Cross-Catchment Collective Team"
+              className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            {/* Optional Dark Overlay */}
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
     </>
     )
 }

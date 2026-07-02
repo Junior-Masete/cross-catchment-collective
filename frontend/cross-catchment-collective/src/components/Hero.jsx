@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/bannerphoto.png";
-import pattern from "../assets/home_banner5.png"; // Optional
+import pattern from "../assets/home_banner6.png"; // Optional
 
 function Hero() {
   const navigate = useNavigate();
@@ -28,19 +28,19 @@ function Hero() {
               Catchments Together
             </p>
 
-            <p className="mt-6 max-w-xl text-xl text-[#fff] md:text-[#2E613F] leading-tight mx-auto lg:mx-0">
+            <p className="mt-6 max-w-xl text-xl text-[#2E613F] md:text-[#2E613F] leading-tight mx-auto lg:mx-0">
               Restoring water, land and biodiversity through collaboration,
               science and community action.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
-              <button onClick={() => navigate("/about-us")} className="px-8 py-3 rounded-md bg-[#22613C] text-white font-medium hover:bg-[#fff] hover:text-[#22613C] transition">
+              <button onClick={() => navigate("/about-us")} className="px-8 py-3 rounded-md bg-[#22613C] text-white font-medium hover:bg-[#18492c] transition">
               
                 About Us
               </button>
 
-              <button className="px-8 py-3  bg-[#fff] rounded-md text-[#22613C] font-medium hover:bg-[#22613C] hover:text-white transition">
+              <button className="px-8 py-3  bg-[#fff] rounded-md text-[#22613C] border border-color-[#2E613F] font-medium hover:bg-[#22613C] hover:text-white hover:border-white transition">
                 Get in Touch
               </button>
 

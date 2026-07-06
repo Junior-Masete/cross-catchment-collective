@@ -1,6 +1,7 @@
 import researchImage from "../assets/resources/research-framework.jpg";
 import merlImage from "../assets/resources/merl.png";
 import youthImage from "../assets/resources/youth-academy.JPG";
+import researchFramework from "../assets/resources/CCC-Research-Framework-March-2026.pdf"
 import { Link } from "react-router-dom";
 
 function ResourcesPage() {
@@ -58,12 +59,19 @@ function ResourcesPage() {
                     The aim is to make research practical, accessible and useful for strengthening restoration, governance, finance, MERL and learning across the Collective
                     </p>
 
-                    <Link
-                    to="/resources/research-framework"
+                    <a 
+                    className="inline-block mt-8 bg-[#22613C] text-white px-8 py-3 rounded-lg hover:bg-[#18492C] transition"
+                    href={researchFramework}>
+                        Learn More
+                    </a>
+
+                    {/* <Link
+                    to={researchFramework}
+                    target="_blank"
                     className="inline-block mt-8 bg-[#22613C] text-white px-8 py-3 rounded-lg hover:bg-[#18492C] transition"
                     >
                     Learn More
-                    </Link>
+                    </Link> */}
                     </div>
 
                 </div>

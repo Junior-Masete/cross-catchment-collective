@@ -130,3 +130,7 @@ code {
 .marquee:hover {
   animation-play-state: paused;
 }
+
+button:hover {
+  cursor: pointer;
+}

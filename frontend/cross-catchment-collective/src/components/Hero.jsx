@@ -40,42 +40,13 @@ function Hero() {
                 About Us
               </button>
 
-              <button className="px-8 py-3  bg-[#fff] rounded-md text-[#22613C] border border-color-[#2E613F] font-medium hover:bg-[#22613C] hover:text-white hover:border-white transition">
+              <button onClick={() => navigate("/contact")} className="px-8 py-3  bg-[#fff] rounded-md text-[#22613C] border border-color-[#2E613F] font-medium hover:bg-[#22613C] hover:text-white hover:border-white transition">
                 Get in Touch
               </button>
 
             </div>
 
           </div>
-
-          {/* Right Image */}
-          {/* <div className="order-1 lg:order-2 flex justify-center">
-
-            <div className="relative"> */}
-
-              {/* Main Circle */}
-
-              {/* <div className="w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[520px] lg:h-[520px] rounded-full overflow-hidden shadow-xl">
-
-                <img
-                  src={heroImage}
-                  alt="Catchment restoration"
-                  className="w-full h-full object-cover"
-                />
-
-              </div> */}
-
-              {/* Orange Circle */}
-
-              {/* <div className="absolute -top-8 -right-8 lg:-top-6 lg:-right-6 w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-full bg-[#EB813A]" />*/}
-
-              {/* Green Circle */}
-
-              {/* <div className="absolute -bottom-6 left-4 lg:left-6 w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full bg-[#22613C]" />
-
-            </div>  
-
-          </div>*/}
 
         </div>
 

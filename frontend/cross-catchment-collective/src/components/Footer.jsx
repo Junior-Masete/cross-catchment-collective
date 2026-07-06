@@ -101,7 +101,7 @@ function Footer() {
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/cross-catchment-collective/about/?viewAsMember=true"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block hover:text-green-700"

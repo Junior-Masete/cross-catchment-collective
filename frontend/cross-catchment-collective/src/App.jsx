@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.jsx'
 import Homepage from './pages/Homepage.jsx'
 import Footer from './components/Footer.jsx'
 import AboutPage from './pages/Aboutpage.jsx'
+import ResourcesPage from './pages/Resourcespage.jsx'
 import {
   BrowserRouter,
   Routes,
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<AboutPage />} />
+          <Route path="/resource-hub" element={<ResourcesPage />} />
         </Routes>
         <Footer /> 
       </BrowserRouter>

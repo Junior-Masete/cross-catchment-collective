@@ -5,7 +5,6 @@ import umkhomazi from "../assets/partner-logos/ndc.png";
 import rivers from "../assets/partner-logos/rol.png";
 import ueip from "../assets/partner-logos/ucp.png";
 import wrc from "../assets/partner-logos/ucwg.png";
-import umzimvubu from "../assets/partner-logos/uwasp.png";
 import sanbi from "../assets/partner-logos/sanbi.png";
 
 const partners = [
@@ -15,7 +14,6 @@ const partners = [
   rivers,
   ueip,
   wrc,
-  umzimvubu,
   sanbi,
 ];
 

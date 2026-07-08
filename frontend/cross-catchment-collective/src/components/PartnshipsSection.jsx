@@ -16,6 +16,7 @@ const partnerships = [
       `Established in 2013, the uMngeni Ecological Infrastructure Partnership works across the uMngeni catchment in KwaZulu-Natal 
       to support the integration of ecological infrastructure into water resource management. The partnership focuses on collaborative governance, 
       strategic investment and socio-ecological resilience to strengthen water security, biodiversity and community well-being.`,
+    partnerLink: `https://amanziethunobuntu.co.za/`,
   },
   {
     title: "Agulhas Biodiversity Initiative",
@@ -24,6 +25,7 @@ const partnerships = [
       `The Agulhas Biodiversity Initiative is a landscape initiative and conservation coordination hub for the Overberg region. It brings together 
       partners from civil society, government, landowners and the private sector to work collaboratively towards a productive, healthy natural
        environment that benefits people and nature.`,
+    partnerLink: `https://www.agulhasbiodiversity.co.za/`,
   },
   {
     title: "uMzimvubu Catchment Partnership",
@@ -32,6 +34,7 @@ const partnerships = [
       `The uMzimvubu Catchment Partnership is a long-standing multi-stakeholder platform working across the 2-million-hectare uMzimvubu catchment. 
       It brings together NGOs, traditional authorities, youth champions, landowners, government and research institutions around a shared vision of 
       resilient landscapes supporting thriving people.`,
+    partnerLink: `https://umzimvubu.org/`,
   },
   {
     title: "Northern Drakensberg Collaborative",
@@ -40,6 +43,7 @@ const partnerships = [
       `The Northern Drakensberg Collaborative is a multi-stakeholder partnership focused on the Northern Drakensberg Strategic Water Source Area, 
       especially the upper uThukela Catchment. The partnership supports inclusive collaboration to protect healthy grasslands, strengthen catchment 
       stewardship and secure water, biodiversity and livelihood benefits across this critical landscape.`,
+    partnerLink: `https://www.ndrakcollab.org/`,
   },
   {
     title: "uMkhomazi Catchment Working Group",
@@ -48,6 +52,7 @@ const partnerships = [
       `The uMkhomazi Catchment Working Group was formed in 2021 in response to increasing pressure on the uMkhomazi catchment and the proposed 
       uMkhomazi Water Project. The partnership works to safeguard this important KwaZulu-Natal catchment through stakeholder engagement, ecological 
       best practice, sustainable land management and inclusive livelihood development.`,
+    partnerLink: `https://www.wwf.org.za/?54822/umkhomazi-catchment-working-group`,
   },
   {
     title: "uMhlathuze Water Stewardship Partnership",
@@ -56,6 +61,7 @@ const partnerships = [
       `The uMhlathuze Water Stewardship Partnership was formed after the 2016 drought in Richards Bay and surrounding areas. It is a multi-stakeholder 
       platform working in the water-stressed uMhlathuze catchment to address shared water risks, strengthen catchment stewardship and improve collaboration 
       between public, private and civil society actors.`,
+    partnerLink: `https://www.wwf.org.za/?53063/Umhlathuze-Water-Stewardship-Partnership`,
   },
   {
     title: "Rivers of the Lowveld",
@@ -65,6 +71,7 @@ const partnerships = [
        Sabie and Crocodile. These rivers sustain rural communities, agriculture, biodiversity and the Kruger National Park landscape, while facing pressure
         from climate variability, invasive plants, land-use change and growing water demand. The partnership supports improved water governance, shared
          basin stewardship, climate-smart land management and practical collaboration for people and ecosystems.`,
+    partnerLink: `/`,
   },
 ];
 

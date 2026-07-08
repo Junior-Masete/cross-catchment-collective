@@ -2,6 +2,7 @@ import researchImage from "../assets/resources/research-framework.jpg";
 import merlImage from "../assets/resources/merl.png";
 import youthImage from "../assets/resources/youth-academy.JPG";
 import researchFramework from "../assets/resources/CCC-Research-Framework-March-2026.pdf"
+import wisdomFramework from "../assets/resources/Catchment_Wisdom_Framework_General_guide_v1.pdf"
 import { Link } from "react-router-dom";
 
 function ResourcesPage() {
@@ -61,7 +62,8 @@ function ResourcesPage() {
 
                     <a 
                     className="inline-block mt-8 bg-[#22613C] text-white px-8 py-3 rounded-lg hover:bg-[#18492C] transition"
-                    href={researchFramework}>
+                    href={researchFramework}
+                    target="_blank">
                         Learn More
                     </a>
 
@@ -86,7 +88,7 @@ function ResourcesPage() {
             <div className="max-w-6xl mx-auto px-6 pb-10 text-center">
 
                 <p className="text-4xl font-bold text-[#22613C]">
-                The MERL Objective
+                Catchment Wisdom Framework
                 </p>
         
                 <p className="block text-gray-700 mx-auto leading-tight">
@@ -102,6 +104,13 @@ function ResourcesPage() {
                 alt="MERL"
                 className="mx-auto mt-5 shadow-lg"
                 />
+
+                <a 
+                    className="inline-block mt-8 bg-[#22613C] text-white px-8 py-3 rounded-lg hover:bg-[#18492C] transition"
+                    href={wisdomFramework}
+                    target="_blank">
+                        Learn More
+                </a>
 
             </div>
 

@@ -2,8 +2,13 @@ export default function PartnershipCard({
   title,
   description,
   image,
+  partnerLink
 }) {
   return (
+    <a
+    href={partnerLink}
+    target="_blank"
+    >
     <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
 
       <div className="p-8 flex-grow">
@@ -25,5 +30,6 @@ export default function PartnershipCard({
       />
 
     </div>
+    </a>
   );
 }

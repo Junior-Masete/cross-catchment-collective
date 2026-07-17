@@ -1,7 +1,7 @@
 import ValueCard from "./ValueCard";
 
 import stewardship from "../assets/values/stewardship.jpg";
-import resilience from "../assets/values/resilience.jpg";
+import resilience from "../assets/values/resilience.jpeg";
 import collaboration from "../assets/values/collaboration.jpg";
 import learning from "../assets/values/learning.jpg";
 import equity from "../assets/values/equity.png";

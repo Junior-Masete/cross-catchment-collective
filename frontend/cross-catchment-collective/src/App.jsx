@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage.jsx'
 import Footer from './components/Footer.jsx'
 import AboutPage from './pages/Aboutpage.jsx'
 import ResourcesPage from './pages/Resourcespage.jsx'
+import NewsPage from  './pages/Newspage.jsx'
 import ContactPage from './pages/Contactpage.jsx'
 import {
   BrowserRouter,
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/resource-hub" element={<ResourcesPage />} />
+          <Route path="news" element={<NewsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer /> 

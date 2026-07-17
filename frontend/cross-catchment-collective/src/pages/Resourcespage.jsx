@@ -3,7 +3,10 @@ import merlImage from "../assets/resources/merl.png";
 import youthImage from "../assets/resources/youth-academy.JPG";
 import researchFramework from "../assets/resources/CCC-Research-Framework-March-2026.pdf"
 import wisdomFramework from "../assets/resources/Catchment_Wisdom_Framework_General_guide_v1.pdf"
+import rolReportV10 from "../assets/resources/AWARD_RoL_CCC_BHNR_Case_study_REPORT_v10.pdf"
+import rolReportV2 from "../assets/resources/AWARD_CCC_RoL_Wisdoms_Case_Study_V2.pdf"
 import { Link } from "react-router-dom";
+import { MoveRight } from "lucide-react";
 
 function ResourcesPage() {
     return (
@@ -104,13 +107,31 @@ function ResourcesPage() {
                 alt="MERL"
                 className="mx-auto mt-5 shadow-lg"
                 />
-
+                <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                 <a 
-                    className="inline-block mt-8 bg-[#22613C] text-white px-8 py-3 rounded-lg hover:bg-[#18492C] transition"
+                    className="inline-flex items-center gap-2 text-[#22613C] bg-[#fff] border border-[#2E613F] px-8 py-3 rounded-lg hover:bg-[#22613C] hover:text-white hover:border-white transition"
                     href={wisdomFramework}
                     target="_blank">
                         Learn More
+                        <MoveRight />
                 </a>
+
+                <a 
+                    className="inline-flex items-center gap-2 text-[#22613C] bg-[#fff] border border-[#2E613F] px-8 py-3 rounded-lg hover:bg-[#22613C] hover:text-white hover:border-white transition"
+                    href={rolReportV10}
+                    target="_blank">
+                        RoL Report
+                        <MoveRight />
+                </a>
+
+                <a 
+                    className="inline-flex items-center gap-2 text-[#22613C] bg-[#fff] border border-[#2E613F] px-8 py-3 rounded-lg hover:bg-[#22613C] hover:text-white hover:border-white transition"
+                    href={rolReportV2}
+                    target="_blank">
+                        RoL Report
+                    <MoveRight />
+                </a>
+                </div>
 
             </div>
 

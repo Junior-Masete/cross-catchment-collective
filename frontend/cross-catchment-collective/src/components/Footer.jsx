@@ -2,6 +2,7 @@ import logo from "../assets/ccc_logo.png";
 import lewis from "../assets/lewis.png";
 
 function Footer() {
+
   return (
     <footer className="w-full">
       {/* Top Section */}
@@ -41,7 +42,7 @@ function Footer() {
               <ul className="space-y-2 text-gray-800">
                 <li>
                   <a
-                    href="/"
+                    href="/cross-catchment-collective/"
                     className="transition hover:text-green-700"
                   >
                     Home
@@ -59,7 +60,7 @@ function Footer() {
 
                 <li>
                   <a
-                    href="/resource-hub"
+                    href="/cross-catchment-collective/resource-hub"
                     className="transition hover:text-green-700"
                   >
                     Resource Hub
@@ -68,7 +69,7 @@ function Footer() {
 
                 <li>
                   <a
-                    href="/news"
+                    href="/cross-catchment-collective/news"
                     className="transition hover:text-green-700"
                   >
                     News
@@ -77,7 +78,7 @@ function Footer() {
 
                 <li>
                   <a
-                    href="/contact"
+                    href="/cross-catchment-collective/contact"
                     className="transition hover:text-green-700"
                   >
                     Contact

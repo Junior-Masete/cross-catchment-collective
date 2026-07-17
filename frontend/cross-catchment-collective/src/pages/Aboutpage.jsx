@@ -1,6 +1,6 @@
 import PartnershipsSection from "../components/PartnshipsSection";
 import ValuesSection from "../components/ValueSection";
-import storyMap from "../assets/Catchments_Maps.png";
+import storyMap from "../assets/CCC_Map_updated.jpg.jpeg";
 import team from "../assets/theteam.jpg"
 
 function AboutPage() {

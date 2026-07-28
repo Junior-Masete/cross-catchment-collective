@@ -7,6 +7,7 @@ import rolReportV10 from "../assets/resources/AWARD_RoL_CCC_BHNR_Case_study_REPO
 import rolReportV2 from "../assets/resources/AWARD_CCC_RoL_Wisdoms_Case_Study_V2.pdf"
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
+import ImpactReports from "../components/ImpactReports";
 
 function ResourcesPage() {
     return (
@@ -14,9 +15,9 @@ function ResourcesPage() {
             <section className="bg-[#EEF3EF] py-20">
                 <div className="max-w-4xl mx-auto px-6 text-center">
 
-                    <p className="text-4xl font-bold text-[#0F4C81]">
+                    <h2 className="text-4xl font-bold text-[#0F4C81]">
                     Cross-Learning
-                    </p>
+                    </h2>
 
                     <p className="mt-8 text-lg leading-tight text-gray-700">
                     Cross-learning is at the heart of the Cross-Catchment Collective.
@@ -90,9 +91,9 @@ function ResourcesPage() {
 
             <div className="max-w-6xl mx-auto px-6 pb-10 text-center">
 
-                <p className="text-4xl font-bold text-[#22613C]">
+                <h2 className="text-4xl font-bold text-[#22613C]">
                 Catchment Wisdom Framework
-                </p>
+                </h2>
         
                 <p className="block text-gray-700 mx-auto leading-tight">
                 MERL stands for Monitoring, Evaluation, Reporting and Learning. For the CCC, 
@@ -116,7 +117,7 @@ function ResourcesPage() {
                         <MoveRight />
                 </a>
 
-                <a 
+                {/* <a 
                     className="inline-flex items-center gap-2 text-[#22613C] bg-[#fff] border border-[#2E613F] px-8 py-3 rounded-lg hover:bg-[#22613C] hover:text-white hover:border-white transition"
                     href={rolReportV10}
                     target="_blank">
@@ -130,7 +131,7 @@ function ResourcesPage() {
                     target="_blank">
                         RoL Report
                     <MoveRight />
-                </a>
+                </a> */}
                 </div>
 
             </div>
@@ -179,6 +180,7 @@ function ResourcesPage() {
             </div>
 
         </section>
+        <ImpactReports />
         </>
     )
 }

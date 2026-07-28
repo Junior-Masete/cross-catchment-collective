@@ -6,6 +6,13 @@ import umzimNews2 from "../assets/news/umzimvuNews.PNG";
 
 const cards = [
   {
+    title: "The news",
+    description:
+      "dlsdgvjkl kjdfgklhjkj klhjdfjkhjjkl hjjdfh jhujeffhdkglbhjkh jkhdb",
+    image: drakensbergImg,
+    link: "https://www.ndrakcollab.org/post/farmer-exchange-cross-visit",
+  },
+  {
     title: "Farmer Exchange Cross Visits",
     description:
       "A cross visit took place to Emmaus on 8 August 2024 to visit Ezimbomvini and EStulwane communities.",
@@ -17,7 +24,7 @@ const cards = [
     description:
       `The Ecofutures programme is a pilot project in the upper uMzimvubu catchment, catalysed
         through Green Trust funding in early 2017, with further support from CITI Foundation, which
-        aims to open opportunities for local youth with limited tertiary acces...`,
+        aims to open opportunities for local youth with limited tertiary access...`,
     image: umzimNews,
     link: "https://umzimvubu.org/wp-content/uploads/2020/06/ucp-newsflash-18-ecofutures-update.pdf",
   },
@@ -25,7 +32,7 @@ const cards = [
     title: "A framework for monitoring & evaluation of UCP projects",
     description:
       `Implementing partners involved in landscape restoration and livelihood enhancing activities in the uMzimvubu catchment
-        are obliged to show developmental impact`,
+        are obliged to show developmental impact...`,
     image: umzimNews2,
     link: "https://umzimvubu.org/wp-content/uploads/2020/06/ucpp-newsflash-17-establishing-me-framework.pdf",
   },
@@ -35,10 +42,9 @@ export default function CommunitySection() {
   return (
     <section className="bg-gray-50 py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Heading */}
         <div className="mx-auto mb-10 max-w-3xl text-center">
-          <h2 className="text-2xl font-bold text-[#074C82] sm:text-4xl lg:text-5xl">
-            CCC Insights
+          <h2 className="text-1xl font-bold text-[#074C82] sm:text-4xl lg:text-5xl">
+            Cross Catchment Collective Insights
           </h2>
 
           <p className="mt-2 text-gray-600 text-base sm:text-lg">
